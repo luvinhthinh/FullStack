@@ -17,7 +17,7 @@ Assumption:
      + LDAP Authentication Rest API
      + To be updated ( pending Logging && Data Analysis, CDN, and Health Monitoring Application)
 
-Load Balancer 0
+<b>Load Balancer 0</b>
   - This component redirects requests to  different web servers using Round Robin Policy. By default, it listens to port 80.
   - For more details, the configuration file is kept in LB0/conf/nginx.conf
   - Usage
@@ -25,7 +25,7 @@ Load Balancer 0
     + to stop : sh stop.sh
     + to restart : sh restart.sh
 
-Web Server Cluster
+<b>Web Server Cluster</b>
   - These components are configured as reverse proxies to redirect requests to application servers accordingly. They are functionality identical and should be deployed into different VMs or pieces of hardware. In this demo, they are hosted on the same box, listening to different port 8001 and 8002.
   - For more details, the configuration file is kept in WebServerCluster/<Instance>/conf/httpd.conf
   - Usage
