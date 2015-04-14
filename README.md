@@ -26,3 +26,9 @@ Load Balancer 0
     + to restart : sh restart.sh
 
 Web Server Cluster
+  - These components are configured as reverse proxies to redirect requests to application servers accordingly. They are functionality identical and should be deployed into different VMs or pieces of hardware. In this demo, they are hosted on the same box, listening to different port 8001 and 8002.
+  - For more details, the configuration file is kept in WebServerCluster/<Instance>/conf/httpd.conf
+  - Usage
+    + to start : sh start.sh
+    + to stop : sh stop.sh
+    + to restart : sh restart.sh
