@@ -11,7 +11,7 @@ Assumption:
      + To be updated ( pending Logging && Data Analysis, CDN, and Health Monitoring Application)
 
 Load Balancer 0
-    - Go to folder LB0
-    - to start : sh start.sh
-    - to stop : sh stop.sh
-    - to restart : sh restart.sh
+  - Go to folder LB0
+  - to start : sh start.sh
+  - to stop : sh stop.sh
+  - to restart : sh restart.sh
