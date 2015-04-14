@@ -18,7 +18,7 @@
      + To be updated ( pending Logging && Data Analysis, CDN, and Health Monitoring Application)
 
 <h3>Load Balancer 0</h3>
-  - This component redirects requests to  different web servers using Round Robin Policy. By default, it listens to port 80.
+  - This component redirects end user requests to  different web servers using Round Robin Policy. By default, it listens to port 80.
   - For more details, the configuration file is kept in LB0/conf/nginx.conf
   - Usage
     + to start : sh start.sh
@@ -26,9 +26,28 @@
     + to restart : sh restart.sh
 
 <h3>Web Server Cluster</h3>
-  - These components are configured as reverse proxies to redirect requests to application servers accordingly. They are functionality identical and should be deployed into different VMs or pieces of hardware. In this demo, they are hosted on the same box, listening to different port 8001 and 8002.
+  - These components are configured as reverse proxies to redirect requests from LB0. They are functionality identical and should be deployed into different VMs or pieces of hardware. In this demo, they are hosted on the same box, listening to different port 8001 and 8002.
   - For more details, the configuration file is kept in WebServerCluster/{Instance}/conf/httpd.conf
   - Usage
     + to start : sh start.sh
     + to stop : sh stop.sh
     + to restart : sh restart.sh
+
+<h3>Load Balancer 1</h3>
+  - This component redirects requests from Web Servers to different application servers using Round Robin Policy. By default, it listens to port 81.
+  - For more details, the configuration file is kept in LB1/conf/nginx.conf
+  - Usage
+    + to start : sh start.sh
+    + to stop : sh stop.sh
+    + to restart : sh restart.sh
+    
+<h3>Application Server (NodeJS)</h3>
+  - To be updated.
+<h3>Authentication Server</h3>
+  - To be updated.
+<h3>Session Storage</h3>
+  - To be updated.
+<h3>CDN</h3>
+  - To be updated.
+<h3>Logging and Data Analysis</h3>
+  - To be updated.
