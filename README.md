@@ -1,4 +1,4 @@
-# FullStack
+# Full Stack Web Application 
 
 Description
   This project demonstrates a web application architecture, which try to achieve no single point of failure as well as high availability. For demo pupose, at first, the requests will hit the Load Balancer (LB0); then they are Round Robin redirected to 2 Apache Http Web Servers (named WS1 and WS2) which are functionality identical, and in turn forward requests to another Load Balancer (LB1) for Application Servers. Each application server itself may or may not have its own Load Balancer. 
