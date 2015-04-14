@@ -40,14 +40,18 @@
     + to start : sh start.sh
     + to stop : sh stop.sh
     + to restart : sh restart.sh
-    
+
 <h3>Application Server (NodeJS)</h3>
   - To be updated.
+
 <h3>Authentication Server</h3>
   - To be updated.
+  
 <h3>Session Storage</h3>
   - To be updated.
+
 <h3>CDN</h3>
   - To be updated.
+
 <h3>Logging and Data Analysis</h3>
   - To be updated.
