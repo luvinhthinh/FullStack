@@ -11,7 +11,11 @@ Assumption:
      + To be updated ( pending Logging && Data Analysis, CDN, and Health Monitoring Application)
 
 Load Balancer 0
-  - Go to folder LB0
-  - to start : sh start.sh
-  - to stop : sh stop.sh
-  - to restart : sh restart.sh
+  - This component redirects requests to  different web servers using Round Robin Policy. 
+  - The configuration file is kept in LB0/conf/nginx.conf
+  - Usage
+    + to start : sh start.sh
+    + to stop : sh stop.sh
+    + to restart : sh restart.sh
+
+Web Server Cluster
